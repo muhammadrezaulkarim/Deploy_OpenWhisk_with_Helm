@@ -97,6 +97,9 @@ wsk property set --auth 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK
 
 kubectl describe nodes
 
+Open the relevant port (e.g. 30000) for nodeport type by creating firewall rules.
+
+
 Prepare a small js function like the following and save it to `greeting.js`:
 ```js
 /**
