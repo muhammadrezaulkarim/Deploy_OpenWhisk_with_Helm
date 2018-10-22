@@ -53,6 +53,9 @@ spec:
             # Tempting to say "/$(DB_PREFIX)_activations", but probe runs
             # externally, therefore can't access the container environment...
             path: "/test_activations"
+            httpHeaders:
+              - name: Authorization
+                value: Basic d2hpc2tfYWRtaW46c29tZV9wYXNzdzByZA==
           initialDelaySeconds: 60
           periodSeconds: 10
           failureThreshold: 10
