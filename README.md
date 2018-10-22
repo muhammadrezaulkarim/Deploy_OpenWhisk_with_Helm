@@ -124,6 +124,53 @@ wsk action invoke hello -b
 
 If the action is invoked and message is returned without error, congratulations, you have a running OpenWhisk cluster on Kubernetes, enjoy it!
 
+Response would be like this:
+{
+    "activationId": "9c6ae41150cf4c9aaae41150cf7c9a37",
+    "annotations": [
+        {
+            "key": "path",
+            "value": "guest/hello1"
+        },
+        {
+            "key": "waitTime",
+            "value": 506
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:6"
+        },
+        {
+            "key": "limits",
+            "value": {
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        },
+        {
+            "key": "initTime",
+            "value": 343
+                    }
+    ],
+    "duration": 359,
+    "end": 1540181972174,
+    "logs": [],
+    "name": "hello1",
+    "namespace": "guest",
+    "publish": false,
+    "response": {
+        "result": {
+            "payload": "Hello, stranger from somewhere!"
+        },
+        "status": "success",
+        "success": true
+    },
+    "start": 1540181971815,
+    "subject": "guest",
+    "version": "0.0.1"
+}
+
 ## Cleanup
 
 Use the following command to remove the deployment:
