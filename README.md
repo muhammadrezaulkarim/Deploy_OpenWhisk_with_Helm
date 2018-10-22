@@ -93,6 +93,9 @@ As a result, please run the following command to config your OpenWhisk client:
 wsk property set --apihost http://<nginx_node_IP>:30000
 wsk property set --auth 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP
 ```
+<nginx_node_IP> can be extracted by running the following command:
+
+kubectl describe nodes
 
 Prepare a small js function like the following and save it to `greeting.js`:
 ```js
